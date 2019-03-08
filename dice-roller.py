@@ -17,3 +17,12 @@ def diceroll(dice):
     result += random.randint(1, n)
     m -= 1
   print(result)
+
+print('Dice Rolling Simulator')
+print("Enter dice to roll in this format (mDn, where 'm' is the number of dice and 'n' is the sides of the dice.)")
+print('Press Q to exit: \n')
+while True: 
+  inputStr = input("Type a dice to roll: ")
+  if inputStr.lower() == "q": 
+    break
+  diceroll(inputStr)
